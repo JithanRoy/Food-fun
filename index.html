@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Food Fun</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	 
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+	
+</head>
+<body>
+
+<section class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">Food Fun</a>
+		</div>
+		<div class="">
+			<ul class="nav navbar-right">
+				<li class="px-2"><a class="text-dark h6" style="font-size: 16px;" href="#home">Home</a></li>
+				
+				<!--<li><a href="#sign_up.html" class="smoothScroll">SIGN UP</a></li> -->
+				<li class="px-2">		
+					<div class="dropdown">
+						<button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+							Sign Up
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						  <li><a onclick= document.getElementById("signup_form").style.display="block" margin-top:200px; margin-left:160px; class="dropdown-item" href="#signup_form">User signup</a></li>
+						  <li><a onclick= document.getElementById("signup_form").style.display="block" margin-top:200px; margin-left:160px; class="dropdown-item" href="#">admin signup</a></li>			  
+						</ul>
+					  </div>
+				</li>
+
+				<li class="px-2">		
+					<div class="dropdown">
+						<button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+							Log In
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						  <li><a onclick= document.getElementById("login_form").style.display="block" margin-top:200px; margin-left:160px; class="dropdown-item" href="#signup_form">User Login</a></li>
+						  <li><a onclick= document.getElementById("login_form").style.display="block" margin-top:200px; margin-left:160px; class="dropdown-item" href="#">admin Login</a></li>			  
+						</ul>
+					  </div>
+				</li>
+
+				
+				<li class="px-2"><a class="text-dark h6" style="font-size: 16px;" href="#home">Contact</a></li>
+			
+
+			</ul>
+		</div>
+	</div>
+	<!-- onclick= document.getElementById("signup_form").style.display="block" margin-top:200px; margin-left:160px;” -->
+		
+</section>
+<section id="home" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h1>Food Fun</h1>
+				<h2>Discover the best food & drinks in Dhaka</h2>
+				<input type="text" id="mySearch" onkeyup="mySearch()" placeholder="Search Restaurent.." title="Type in a category">
+				<ul id="myMenu">
+					<li><a href="#">The Mughal Empire</a></li>
+					<li><a href="#"></a>kacchi Bhai</li>
+					<li><a href="#"></a>sultan dine</li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				  </ul>
+				<a href="#gallery" class="smoothScroll btn btn-default">Order Now</a>
+	
+			</div>
+		</div>
+	</div>		
+</section>
+
+		<!--Log in part start-->												
+				<h1 style="text-align:center; font-size:50px; color:#fff ; display: none;">Login Form</h1>
+												
+						<div id="login_form" class="modal">
+						<form class="modal-content animate" action="/action_page.php">
+													
+						<div class="imgcontainer">
+						<span onclick="document.getElementById('login_form').style.display='none'" class="close" title="Close PopUp">&times;</span>
+						
+						<img src="images/1.png" alt="Avatar" class="avatar">
+												<h1 style="text-align:center">Log In Form</h1>
+						</div>
+											
+								<div class="container Login">
+													<input type="text" placeholder="Enter Username" name="uname">
+													<input type="password" placeholder="Enter Password" name="psw">        
+													<button type="submit" style="margin-left: 28px; border-radius: 5px;">Login</button>
+													<input type="checkbox" style="margin:26px 30px;"> Remember me      
+													<a id="Forget_password" href="#" style="text-decoration:none; float:left; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+								</div>
+												
+						</form>
+											
+						</div>
+											
+									
+		<!-- Log in part end-->
+<!--sign up part start-->
+
+
+
+<h1 style="text-align:center; font-size:50px; color:#fff; display: none;">sign up Form</h1>
+												
+<div id="signup_form" class="modal">
+    <form class="modal-content animate" action="/action_page.php">
+                                
+    <div class="imgcontainer">
+    <span onclick="document.getElementById('signup_form').style.display='none'" class="close" title="Close PopUp">&times;</span>
+    
+    <img src="images/1.png" alt="Avatar" class="avatar">
+                            <h1 style="text-align:center">signup form</h1>
+     </div>
+                        
+            <div class="container Login">
+                                <input type="text" placeholder="Enter name" name="uname">
+                                <input type="text" placeholder="Email Address" name="email">
+                                <input type="password" placeholder="Enter Password" name="psw">  
+                                <input type="password" placeholder="Repeat Password" name="psw">       
+                                <button type="submit" style="margin-left: 28px; border-radius: 5px;">Submit</button>
+                                <input type="checkbox" style="margin:26px 30px;"> Remember me      
+                                <a id="Forget_password" href="#" style="text-decoration:none; float:left; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+            </div>
+                            
+    </form>
+                    
+</div>
+
+
+
+<!--sign up part end-->
+
+					
+		
+
+<!-- ----------new section-------- -->
+<section class="parallax-section">
+	<div class="container" >
+		<div style="text-align: center;">
+		  <h3>Order Your Meal !!!!</h3>
+		  </div>
+		  <div class="row" id="sectionHide">
+			<div class="col-md-4">
+			<div class="product-card">
+				<div class="badge">New</div>
+				<div class="product-tumb">
+					<img src="images/Sultan_dine.jpg" alt="">
+				</div>
+				<div class="product-details">
+					<span class="product-catagory">Sultan's Dine</span>
+					<button id="menulist" type="button" class="btn btn-secondary">checkbox</button>
+				</div>
+			</div>
+		   </div>
+			<div class="col-md-4">
+			<div class="product-card">
+				<div class="badge">New</div>
+				<div class="product-tumb">
+					<img src="images/Kacchi_bhai_2.jpg" alt="">
+				</div>
+				<div class="product-details">
+					<span class="product-catagory">Kacchi Bhai</span>
+					<h4><a href="customerlogin.php">Order Now</a></h4>
+				</div>
+			</div>
+			</div>
+			<div class="col-md-4">
+			<div class="product-card">
+				<div class="badge">New</div>
+				<div class="product-tumb">
+					<img src="images/mughal_empire.jpg" alt="">
+				</div>
+				<div class="product-details">
+					<span class="product-catagory">The Mughal Empire</span>
+					<h4><a href="customerlogin.php">Order Now</a></h4>
+				</div>
+		  </div>
+			</div>
+			<div class="col-md-4">
+			<div class="product-card">
+				<div class="badge">New</div>
+				<div class="product-tumb">
+					<img src="images/Spring_Rolls.jpg" alt="">
+				</div>
+				<div class="product-details">
+					<span class="product-catagory">Spring Rolls</span>
+					<h4><a href="customerlogin.php">Order Now </a></h4>
+				</div>
+			</div>
+		   </div>
+		   <div class="col-md-4">
+			<div class="product-card">
+				<div class="badge">New</div>
+				<div class="product-tumb">
+					<img src="images/Happy_Happy_Choco_Chip_Shake.jpg" alt="">
+				</div>
+				<div class="product-details">
+					<span class="product-catagory">Happy Choco Chip Shake</span>
+					<h4><a href="customerlogin.php">Order Now </a></h4>
+				</div>
+			</div>
+		   </div>
+		   <div class="col-md-4">
+			<div class="product-card">
+				<div class="badge">New</div>
+				<div class="product-tumb">
+					<img src="images/Pakora.jpg" alt="">
+				</div>
+				<div class="product-details">
+					<span class="product-catagory">Pakora</span>
+					<h4><a href="customerlogin.php">Order Now </a></h4>
+				</div>
+			</div>
+		   </div>
+		  </div>
+		</div>
+	
+
+</section>
+
+<!--sultan dine menu list-->
+
+	<form class="modal-content animate" action="/action_page.php">
+
+		
+				<div class="container" id="sultanmenu" style="display: none;">
+					<div class="imgcontainer">
+							<div id="main" class="card card-body">				 
+								<h2 class="title">Items</h2>
+
+								<div class="container">
+									<div class="row">
+										<div class="col-md-6">
+											<ul id="items">
+												<li class="list-group-item">Item 1  20tk</li>
+												<li class="list-group-item">Item 2</li>
+												<li class="list-group-item">Item 3</li>
+												<li class="list-group-item">Item 4</li>
+											</ul>
+
+										</div>
+
+
+
+										
+									</div>
+								</div>
+								
+							</div>
+					</div>
+				</div>
+		
+	
+	</form>
+
+
+
+
+
+<!--sultan dine menu list end-->
+
+
+<!--
+<section id="restaurant">
+	<div class="container">
+		<div class="card-deck">
+			<div class="card">
+			  <img class="card-img-top" src="..." alt="Card image cap">
+			  <div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			  </div>
+			</div>
+			<div class="card">
+			  <img class="card-img-top" src="..." alt="Card image cap">
+			  <div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			  </div>
+			</div>
+			<div class="card">
+			  <img class="card-img-top" src="..." alt="Card image cap">
+			  <div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			  </div>
+			</div>
+		  </div>
+
+	</div>
+
+</section>
+
+-->
+	
+
+<footer class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading">Contact Info.</h2>
+				<div class="ph">
+					<p><i class="fa fa-phone"></i> Phone</p>
+					<h4>+8801521327660</h4>
+				</div>
+				<div class="address">
+					<p><i class="fa fa-map-marker"></i> Our Location</p>
+					<h4>175 Aftabnagar, Dhaka, Bangladesh</h4>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading">Open Hours</h2>
+			    	<p>Sunday-Thursday <span>9:00 AM - 9:00 PM</span></p>
+					<p>Friday <span>2:30 PM - 10:00 PM</span></p>
+
+					<p>Saturday <span>11:30 AM - 7:00 PM</span></p>
+			</div>
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading">Follow Us</h2>
+				<ul class="social-icon">
+					<li><a href="#" class="fa fa-facebook wow bounceIn" data-wow-delay="0.3s"></a></li>
+					<li><a href="#" class="fa fa-twitter wow bounceIn" data-wow-delay="0.6s"></a></li>
+					<li><a href="#" class="fa fa-behance wow bounceIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-dribbble wow bounceIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-github wow bounceIn" data-wow-delay="0.9s"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<section id="copyright">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h3>Food Fun</h3>
+				<p>Online Food Delivery System </p>
+                
+
+			</div>
+		</div>
+	</div>
+</section>	
+
+
+<script>
+
+
+	
+
+
+</script>
+
+<script src="js/jquery.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+</html>
